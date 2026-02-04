@@ -31,6 +31,7 @@ class Exam extends Model
             $exam->total =
                 ($exam->zabt ?? 0) +
                 ($exam->tajweed_lehja ?? 0) +
+                ($exam->lehja ?? 0) +
                 ($exam->tarbiti_nisab ?? 0) +
                 ($exam->guzashta_jaiza ?? 0) +
                 ($exam->hazri ?? 0) +

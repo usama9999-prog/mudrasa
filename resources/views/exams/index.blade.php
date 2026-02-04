@@ -127,7 +127,7 @@
                     <td>{{ $student->kul_para }}</td>
 
                     <td>{{ $student->exam?->zabt ?? '-' }}</td>
-                    <td>{{ $student->exam?->tajweed ?? '-' }}</td>
+                    <td>{{ $student->exam?->tajweed_lehja ?? '-' }}</td>
                     <td>{{ $student->exam?->lehja ?? '-' }}</td>
                     <td>{{ $student->exam?->tarbiti_nisab ?? '-' }}</td>
                     <td>{{ $student->exam?->guzashta_jaiza ?? '-' }}</td>

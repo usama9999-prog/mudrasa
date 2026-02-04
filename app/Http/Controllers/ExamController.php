@@ -248,13 +248,13 @@ class ExamController extends Controller
             $request->guzashta_jaiza +
             $request->hazri +
             $request->tarjuma;
-
+       
         // ✅ Percentage calculate
         $fullMarks = 150;
         $percentage = round(($total / $fullMarks) * 100, 2);
 
         // ✅ Update or Create Exam record
-        Exam::updateOrCreate(
+        $exam = Exam::updateOrCreate(
             ['student_id' => $request->student_id],
             [
                 'zabt'            => $request->zabt,
